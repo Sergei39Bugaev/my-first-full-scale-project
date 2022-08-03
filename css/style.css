@@ -9,7 +9,7 @@ font-family: "Nunito", sans-serif;
 body {
   margin: 0;
   padding: 0;
-  font-family: font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
@@ -17,7 +17,7 @@ body {
 /* Шапка сайта */
 .header {
 }
-.container{
+.container {
   max-width: 1100px;
   margin: 0px auto;
 }
@@ -36,14 +36,14 @@ body {
 .header__logo {
   width: 117px;
 }
-.header__search {
+.search {
   width: 350px;
   height: 40px;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.search__input {
+.search-input {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -52,20 +52,20 @@ body {
   height: 36px;
   padding-left: 23px;
   color: #333333;
-  background-color: #F5FAFE;
+  background-color: #f5fafe;
   border: 1px solid #000000;
   border-right: 0px;
   border-radius: 6px 0 0 6px;
 }
-.search__button {
+.search-button {
   padding: 12px 24px 12px 25px;
   width: 65px;
   height: 40px;
-  background-color: #EC1F46;
-  border: 1px solid #EC1F46;
+  background-color: #ec1f46;
+  border: 1px solid #ec1f46;
   border-radius: 0 6px 6px 0;
 }
-.header__avatar_top-right {
+.avatar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,7 +76,6 @@ body {
   height: 40px;
   border-radius: 100%;
   object-fit: cover;
-
 }
 .avatar__name {
   font-family: "Mulish", sans-serif;
@@ -84,14 +83,14 @@ body {
   font-size: 14px;
 }
 .header-bottom {
-  background-color: #0A223D;
+  background-color: #0a223d;
 }
 .header-bottom__item {
   padding-top: 31px;
   padding-bottom: 31px;
 }
 .list {
-  padding: 0px; 
+  padding: 0px;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -99,10 +98,9 @@ body {
 }
 .list__item {
   list-style: none;
- 
 }
 .list__item-link {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 14px;
