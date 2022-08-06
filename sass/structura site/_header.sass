@@ -1,0 +1,79 @@
+.header
+
+  &-top
+    background-color: #FFFFFF
+    padding-top: 40px
+    padding-bottom: 40px
+.container-top
+  display: flex
+  justify-content: space-between
+  align-items: center
+.logo
+
+  &__image
+
+.search
+  width: 350px
+  height: 40px
+  display: flex
+  align-items: center
+  // justify-content: space-between
+  &-top
+
+  &__input
+    height: 100%
+    width: 285px
+    font-weight: 400
+    font-size: 12px
+    background-color: #F5FAFE
+    border: none
+    border-radius: 4px 0 0 4px
+    padding: 0 23px 0 23px
+
+  &__input:active, &__input:focus
+    outline: none
+    border: 1px solid #000000
+    border-right: none
+
+  &__button
+    height: 100%
+    padding: 0
+    width: 65px
+    background-color: $button-color
+    border: none
+    border-radius: 0 4px 4px 0
+
+.avatar
+  text-decoration: none
+  display: flex
+  align-items: center
+  color: $text-color
+
+  &__photo
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover
+    margin-right: 18px
+
+  &__name
+    font-weight: 400
+    font-size: 14px
+
+.header-bottom
+  background-color: #0A223D
+  padding-top: 31px
+  padding-bottom: 31px
+
+.container-bottom
+
+.navigation
+  display: flex
+  justify-content: space-between
+
+  &__link
+    text-decoration: none
+    text-transform: uppercase
+    color: #fff
+    font-weight: 700
+    font-size: 14px
