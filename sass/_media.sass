@@ -1,0 +1,70 @@
+// 992px - 1200px
+@media screen and  (max-width: 1200px)
+  .container
+    max-width: 960px
+
+// 768px - 992px
+@media screen and  (max-width: 992px)
+  .header-top
+    padding-top: 30px
+    padding-bottom: 30px
+  .container
+    max-width: 720px
+  .logo
+    margin-right: auto
+    width: 134px
+    &__image
+      width: 100%
+  .search
+    width: 340px
+  .header-bottom
+    padding-top: 22px
+    padding-bottom: 23px
+  .navigation__link
+    font-size: 12px
+
+// 576px - 798px
+@media screen and  (max-width: 798px)
+  .container
+    max-width: 540px
+  .search
+    width: 250px
+  .navigation__link
+    font-size: 10px
+  .avatar__name
+    font-size: 12px
+
+// 480px - 576px
+@media screen and (max-width: 576px)
+  .header-top
+    padding-top: 30px
+    padding-bottom: 30px
+  .container
+    max-width: 460px
+    width: 92%
+  .logo
+    width: 99px
+    &__image
+      width: 100%
+  .search, .avatar, .header-bottom
+    display: none
+  .menu
+    width: 16px
+    height: 11px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    padding: 0
+    border: none
+    background-color: #fff
+    cursor: pointer
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $text-color
+
+// 320px - 480px
+@media screen and (max-width: 480px)
+  .container
+    max-width: 264px
