@@ -472,6 +472,77 @@ template {
   color: #8594a5;
 }
 
+.hotel {
+  background-color: #F5FAFE;
+  padding-top: 23px;
+  padding-bottom: 20px;
+}
+.hotel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotel__info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-stars {
+  flex-basis: 100%;
+}
+
+.info-name {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-right: 14px;
+  line-height: 30px;
+}
+
+.info-offer {
+  padding: 3px 9px 4px;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.info-advantage {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  flex-basis: 100%;
+}
+
+.rattings {
+  width: 65px;
+  height: 45px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9px 6px 6px;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 3px;
+}
+.rattings__name {
+  font-weight: 600;
+  font-size: 8px;
+  margin-bottom: 2px;
+  line-height: 10px;
+}
+.rattings__number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+}
+.rattings__number-small {
+  font-size: 10px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -501,6 +572,9 @@ template {
   }
   .navigation__link {
     font-size: 12px;
+  }
+  .hotel__info {
+    flex-basis: 70%;
   }
 }
 @media screen and (max-width: 798px) {
@@ -556,5 +630,21 @@ template {
 @media screen and (max-width: 480px) {
   .container {
     max-width: 278px;
+  }
+  .rattings {
+    display: none;
+  }
+  .hotel__info {
+    flex-basis: 100%;
+  }
+  .info-stars {
+    flex-basis: 21%;
+    margin-left: auto;
+  }
+  .info-name {
+    margin-right: 0;
+  }
+  .info-offer {
+    order: -1;
   }
 }/*# sourceMappingURL=style.css.map */
