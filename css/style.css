@@ -634,6 +634,9 @@ template {
   .rattings {
     display: none;
   }
+  .hotel {
+    padding-top: 5px;
+  }
   .hotel__info {
     flex-basis: 100%;
   }
