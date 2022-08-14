@@ -638,7 +638,7 @@ template {
     flex-basis: 100%;
   }
   .info-stars {
-    flex-basis: 21%;
+    flex-basis: auto;
     margin-left: auto;
   }
   .info-name {
