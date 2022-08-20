@@ -488,6 +488,10 @@ template {
   align-items: center;
   flex-wrap: wrap;
 }
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
 
 .info-stars {
   flex-basis: 100%;
@@ -589,6 +593,134 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.grid-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booking {
+  padding: 29px 29px 26px 26px;
+  background-color: #0A223D;
+  color: #fff;
+  border-radius: 8px;
+}
+.booking__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 59px;
+}
+.price-start {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.per-room {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.person-room {
+  margin-top: 4px;
+}
+
+.guests {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.guest {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 8px;
+}
+
+.rooms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__call-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 17px;
+}
+
+.phone {
+  min-width: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-call {
+  color: inherit;
+  text-decoration: none;
+}
+
+.booking__button {
+  border: none;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  width: 295px;
+  min-height: 45px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.options {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.map {
+  width: 350px;
+  height: 210px;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 1200px) {
