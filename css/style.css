@@ -595,7 +595,7 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
-.grid-right {
+.grid-booking-map {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -727,6 +727,14 @@ template {
   .container {
     max-width: 960px;
   }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide-image {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media screen and (max-width: 992px) {
   .header-top {
@@ -756,6 +764,26 @@ template {
   .hotel__info {
     flex-basis: 70%;
   }
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .slider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .grid-booking-map {
+    flex-direction: row;
+    width: 100%;
+  }
+  .booking {
+    margin-bottom: 30px;
+  }
+  .booking__button {
+    width: 100%;
+  }
+  .booking {
+    width: 340px;
+  }
 }
 @media screen and (max-width: 798px) {
   .container {
@@ -769,6 +797,18 @@ template {
   }
   .avatar__name {
     font-size: 12px;
+  }
+  .slider {
+    height: 350px;
+  }
+  .grid-booking-map {
+    flex-direction: column;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -806,6 +846,16 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .slider {
+    height: 290px;
+    margin-bottom: 20px;
+  }
+  .booking {
+    margin-bottom: 20px;
+  }
+  .map {
+    height: 173px;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -816,6 +866,7 @@ template {
   }
   .hotel {
     padding-top: 5px;
+    padding-bottom: 40px;
   }
   .hotel__info {
     flex-basis: 100%;
@@ -829,5 +880,8 @@ template {
   }
   .info-offer {
     order: -1;
+  }
+  .slider {
+    height: 180px;
   }
 }/*# sourceMappingURL=style.css.map */
