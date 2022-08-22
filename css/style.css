@@ -5,7 +5,7 @@
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  font-family: Mulish;
+  font-family: "Mulish" sans-serif;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -724,6 +724,81 @@ template {
   overflow: hidden;
 }
 
+.newslatter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url(../img/image-newslatter.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.newslatter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 34, 61, 0.8);
+}
+.newslatter-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 730px;
+  min-height: 75px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Mulish";
+}
+.newslatter-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+.newslatter__subtitle {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.newslatter-form {
+  position: relative;
+  min-width: 350px;
+  min-height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.newslatter__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  padding-right: 75px;
+  outline: none;
+}
+.newslatter__button {
+  position: absolute;
+  right: 0;
+  min-width: 65px;
+  height: 100%;
+  background-color: #EC1F46;
+  border: none;
+  color: #fff;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -785,6 +860,13 @@ template {
   .booking {
     width: 340px;
   }
+  .newslatter {
+    padding-top: 92px;
+    padding-bottom: 93px;
+  }
+  .newslatter-wrapper {
+    max-width: 720px;
+  }
 }
 @media screen and (max-width: 798px) {
   .container {
@@ -810,6 +892,18 @@ template {
   }
   .map {
     width: 100%;
+  }
+  .newslatter {
+    padding-top: 76px;
+    padding-bottom: 83px;
+  }
+  .newslatter-wrapper {
+    max-width: 460px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newslatter-title {
+    margin-bottom: 37px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -884,5 +978,19 @@ template {
   }
   .slider {
     height: 180px;
+  }
+  .newslatter-wrapper {
+    max-width: 278px;
+  }
+  .newslatter-form {
+    min-width: 255px;
+  }
+  .newslatter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newslatter__subtitle {
+    font-size: 30px;
+    line-height: 38px;
   }
 }/*# sourceMappingURL=style.css.map */
