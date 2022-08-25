@@ -2,9 +2,10 @@
 @media screen and  (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 590px
-  .swiper-slide-image
+  .hotel
+    &-slider
+      width: 590px
+  .swiper-slide__image
     height: 100%
     object-fit: cover
 // 768px - 992px
@@ -27,18 +28,17 @@
   .navigation__link
     font-size: 12px
   .hotel
+    padding-bottom: 60px
     &__info
       flex-basis: 70%
     &-grid
       flex-direction: column
-  .slider
-    width: 100%
-    margin-bottom: 30px
+    &-slider
+      width: 100%
+      margin-bottom: 30px
   .grid-booking-map
     flex-direction: row
     width: 100%
-  .booking
-    margin-bottom: 30px
   .booking__button
     width: 100%
   .booking
@@ -48,6 +48,10 @@
     padding-bottom: 93px
     &-wrapper
       max-width: 720px
+  .reviews
+    &-slider
+      &-item
+        max-width: 580px
 // 576px - 798px
 @media screen and  (max-width: 798px)
   .container
@@ -58,12 +62,14 @@
     font-size: 10px
   .avatar__name
     font-size: 12px
-  .slider
-    height: 350px
+  .hotel
+    &-slider
+      height: 350px
   .grid-booking-map
     flex-direction: column
   .booking
     width: 100%
+    margin-bottom: 30px
   .map
     width: 100%
   .newslatter
@@ -75,6 +81,15 @@
       align-items: flex-start
     &-title
       margin-bottom: 37px
+  .reviews
+    &-slider
+      &__item
+        padding-left: 30px
+        padding-right: 30px
+        &::before,&::after
+          display: none
+      &__button
+        top: 115px
 // 480px - 576px
 @media screen and (max-width: 576px)
   .header-top
@@ -104,9 +119,10 @@
       width: 16px
       height: 1px
       background-color: $text-color
-  .slider
-    height: 290px
-    margin-bottom: 20px
+  .hotel
+    &-slider
+      height: 290px
+      margin-bottom: 20px
   .booking
     margin-bottom: 20px
   .map
@@ -121,8 +137,10 @@
   .hotel
     padding-top: 5px
     padding-bottom: 40px
-  .hotel__info
-    flex-basis: 100%
+    &__info
+      flex-basis: 100%
+    &-slider
+      height: 180px
   .info-stars
     flex-basis: auto
     margin-left: auto
@@ -130,8 +148,6 @@
     margin-right: 0
   .info-offer
     order: -1
-  .slider
-    height: 180px
   .newslatter
     &-wrapper
       max-width: 278px
@@ -143,3 +159,8 @@
     &__subtitle
       font-size: 30px
       line-height: 38px
+  .reviews
+    &-slider
+      &-text
+        max-width: 219px
+        text-align: left
