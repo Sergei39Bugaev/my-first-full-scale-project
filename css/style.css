@@ -446,6 +446,9 @@ template {
   padding-bottom: 19px;
   background-color: #F5FAFE;
 }
+.breadcrumb-title {
+  display: none;
+}
 .breadcrumb-list {
   display: flex;
   align-items: center;
@@ -548,7 +551,7 @@ template {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
-  margin-right: 14px;
+  margin: 0 14px 0 0;
   line-height: 30px;
 }
 
