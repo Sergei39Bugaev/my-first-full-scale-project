@@ -8,6 +8,9 @@
   .swiper-slide__image
     height: 100%
     object-fit: cover
+  .card
+    width: 230px
+    height: 230px
 // 768px - 992px
 @media screen and  (max-width: 992px)
   .header-top
@@ -49,9 +52,29 @@
     &-wrapper
       max-width: 720px
   .reviews
+    padding-bottom: 60px
     &-slider
-      &-item
+      &__item
         max-width: 580px
+        margin-top: 95px
+        padding-left: 62px
+        padding-right: 62px
+        &::before,&::after
+          display: none
+    &-title
+      font-size: 30px
+  .activities
+    padding-bottom: 70px
+    &-wrapper
+      max-width: 700px
+      min-height: 530px
+      flex-wrap: wrap
+      align-content: space-between
+  .card
+    width: 339px
+    height: 255px
+    padding-right: 112px
+
 // 576px - 798px
 @media screen and  (max-width: 798px)
   .container
@@ -86,10 +109,18 @@
       &__item
         padding-left: 30px
         padding-right: 30px
-        &::before,&::after
-          display: none
       &__button
-        top: 115px
+        top: 96px
+  .activities
+    padding-bottom: 60px
+    &-wrapper
+      flex-direction: column
+  .card
+    width: 100%
+    margin-bottom: 28px
+    &:last-child
+      margin-bottom: 0px
+
 // 480px - 576px
 @media screen and (max-width: 576px)
   .header-top
@@ -127,6 +158,14 @@
     margin-bottom: 20px
   .map
     height: 173px
+  .reviews
+    &-title
+      font-size: 25px
+    &-slider
+      &__item
+        margin-top: 87px
+      &__button
+        top: 87px
 
 // 320px - 480px
 @media screen and (max-width: 480px)
@@ -160,6 +199,10 @@
       font-size: 30px
       line-height: 38px
   .reviews
+    &-title
+      width: 245px
+      font-size: 18px
+      line-height: 23px
     &-slider
       &-text
         max-width: 219px
